@@ -1,10 +1,31 @@
-# Running Your Challenge
+# Too many screens
 
-Place all the code needed to run your challenge in this directory, and document the required environment as described
-below:
+1. Run docker compose project
 
-- If you have included a `Dockerfile` and a `docker-compose.yml`, then that is all that should be enough (unless additional
-  explanations are needed as well).
-- If you have not, please document the steps to create a runnable instance of your challenge, as we (Anis and Hugo)
-  will refer to this when adding the `Dockerfile` and `docker-compose.yml`
-- For any clarifications, consult us (Anis and Hugo).
+```
+docker compose up --build
+```
+
+2. Use private key to log into the server as ned
+
+```
+ssh -i id_rsa -p 2025 ned@localhost
+```
+
+3. List screen sessions (you should see the session `sysadmin`)
+
+```
+screen -ls
+```
+
+4. Attach to the screen session `sysadmin`
+
+```
+screen -r sysadmin
+```
+
+5. Get the flag
+
+```
+cat flag.txt
+```
