@@ -6,22 +6,22 @@
 docker compose up --build
 ```
 
-2. Use private key to log into the server as ned
+2. Use password `nedned` to log into the server as `ned`
 
 ```
-ssh -i id_rsa -p 2025 ned@localhost
+ssh ned@localhost -p 2025 
 ```
 
-3. List screen sessions (you should see the session `sysadmin`)
+3. List screen sessions (you should see the session `stash`)
 
 ```
 screen -ls
 ```
 
-4. Attach to the screen session `sysadmin`
+4. Attach to the screen session `ned-stash`
 
 ```
-screen -r sysadmin
+screen -r ned-stash
 ```
 
 5. Get the flag

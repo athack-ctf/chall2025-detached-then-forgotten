@@ -1,7 +1,7 @@
 services:
-  screens:
-    build: ./screens
-    image: screens
-    hostname: screens
+  ned-the-sysadmin-2:
+    build: .
+    image: athack-ctf/ned-the-sysadmin-2:latest
+    hostname: ned-land
     ports:
       - "2025:22"
