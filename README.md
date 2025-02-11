@@ -9,7 +9,7 @@
 
 ## Designers
 
-- Syed
+- Abdussamad
 - _Heavily twisted by_ Anis
 
 ## Description
