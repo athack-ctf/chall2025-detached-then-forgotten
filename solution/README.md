@@ -50,7 +50,7 @@
     ```
     ned-stash@ned-land:~$
     ```
-6. Now that we're logged in as `ned-stash`, let cat the flag
+6. Now that we're logged in as `ned-stash`, let's read the flag
 
    ```
    cat flag.txt
