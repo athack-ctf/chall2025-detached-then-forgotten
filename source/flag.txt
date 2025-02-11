@@ -1,1 +1,1 @@
-ATHACKCTF{when_misused_screen_sessions_can_be_abused}
+ATHACKCTF{t0ld_y4_n0t_to_b3_f00led_by_bash_hist0ry}
