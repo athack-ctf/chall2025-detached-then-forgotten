@@ -1,10 +1,6 @@
-The description of your challenge as seen by participants in CTFd. Try to make it feel within the theme
-of the event...
+Ned is known to get attached, then detach and forget. This time, what he left behind is yours to find. 
 
----
-If your challenge is a multi-flag one (i.e., it consists of a sequence of sub-challenges each rewarded with
-its own flag), requiring a different description for each sub-challenge, then have your descriptions split as 
-done with this paragraph, and the next one.
+Ned's credentials:
 
----
-Obviously, for each sub-challenge, you should provide its flag value in [solution/FLAGS.md](solution/FLAGS.md).
+- Username: ned
+- Password: nedned
