@@ -30,7 +30,7 @@ RUN apt-get update && \
 # Notices that ned is no longer a sudoer here below
 RUN useradd -m -s /bin/bash ned && \
     echo 'ned:nedned' | chpasswd && \
-    usermod -aG sudo ned
+    usermod -aG ned
 
 RUN useradd -m -s /bin/bash ned-stash && \
     echo 'ned-stash:zHqbRU.6*M91' | chpasswd && \
