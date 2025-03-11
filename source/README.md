@@ -1,4 +1,4 @@
-# Too many screens
+# How to run?
 
 1. Run docker compose project
 
