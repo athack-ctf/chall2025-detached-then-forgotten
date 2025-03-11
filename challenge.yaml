@@ -1,0 +1,31 @@
+name: "Detached then Forgotten"
+author: "Abdussamad"
+category: Pwn
+description: |
+    Ned is known to get attached, then detach and completely forget. This time, what he left behind is yours to
+    find. However, don't be fooled by his past.
+
+    Ned's SSH credentials:
+
+    - Username: ned
+    - Password: nedned
+    
+value: 150
+
+type: standard
+
+
+flags:
+  - type: "static"
+    content: "ATHACKCTF{t0ld_y4_n0t_to_b3_f00led_by_bash_hist0ry}"
+    data: "case_insensitive"
+
+tags:
+ - beginner
+ - ssh
+
+files:
+
+state: visible
+
+version: "0.1"
