@@ -1,7 +1,9 @@
+version: '3.8'
+
 services:
-  ned-the-sysadmin-2:
+  detached-then-forgotten:
     build: .
-    image: athack-ctf/ned-the-sysadmin-2:latest
+    image: athack-ctf/detached-then-forgotten:latest
     hostname: ned-land
     ports:
       - "2025:22"
