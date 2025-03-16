@@ -2,7 +2,7 @@ version: '3.8'
 services:
   detached-then-forgotten:
     image: athack-ctf/chall2025-detached-then-forgotten:latest
-    build: .
+    build: ./source
     hostname: ned-land
     ports:
     - '52026:22'
