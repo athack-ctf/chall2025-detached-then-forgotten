@@ -1,31 +1,14 @@
-# How to run?
+# Running This Challenge
 
-1. Run docker compose project
-
+Build
 ```
-docker compose up --build
-```
-
-2. Use password `nedned` to log into the server as `ned`
-
-```
-ssh ned@localhost -p 2025 
+docker build -t athack-ctf/chall2025-detached-then-forgotten:latest .
 ```
 
-3. List screen sessions (you should see the session `stash`)
-
+Run
 ```
-screen -ls
-```
-
-4. Attach to the screen session `ned-stash`
-
-```
-screen -r ned-stash
-```
-
-5. Get the flag
-
-```
-cat flag.txt
+docker run -d --name detached-then-forgotten \
+  --hostname ned-land \
+  -p 52026:22 \
+  athack-ctf/chall2025-detached-then-forgotten:latest
 ```
