@@ -22,16 +22,11 @@ RUN apt-get update && \
     mkdir /var/run/sshd && \
     apt-get clean && rm -rf /var/lib/apt/lists/*
 
-# Note: Historically, I didn't realize that ned was given "sudo" privelges, which messed up the whole chall.
-# RUN useradd -m -s /bin/bash ned && \
-#    echo 'ned:nedned' | chpasswd && \
-#    usermod -aG sudo ned
-
+# Note: Historically, I didn't realize that ned was given "sudo" privelges, which messed up the whole chall. 
 # Notices that ned is no longer a sudoer here below
 RUN useradd -m -s /bin/bash ned && \
-    echo 'ned:nedned' | chpasswd && \
-    usermod -aG ned
-
+    echo 'ned:nedned' | chpasswd
+    
 RUN useradd -m -s /bin/bash ned-stash && \
     echo 'ned-stash:zHqbRU.6*M91' | chpasswd && \
     usermod -aG sudo ned-stash
